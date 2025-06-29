@@ -3,6 +3,6 @@ nav {
 }
 body {
     display: grid;
-    grid-template-columns: 75% 25%;
+    grid-template: auto 1fr auto/auto 1fr auto; 
 }
 
