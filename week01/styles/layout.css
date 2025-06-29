@@ -1,0 +1,8 @@
+.nav {
+    display: flex;
+}
+body {
+    display: grid;
+    grid-template-columns: 75% 25%;
+}
+
