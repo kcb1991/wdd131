@@ -1,20 +1,32 @@
 * {
-    padding: 20px;
-    margin: 5px;
+    box-sizing: border-box;
 }
-.course-title {
-    display: block;
-    text-align: center;
+
+body {
+    margin: 0;
+    padding: 0;
     font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: blue;
+    background-color: #000414; /* Optional dark background */
     color: rgb(53, 247, 53);
 }
+.course-title {
+    text-align: center;
+    background-color: blue;
+    color: rgb(53, 247, 53);
+    padding: 20px;
+}
+
 .navigation {
-    display:flex;
+    display: flex;
     justify-content: space-evenly;
     background-color: rgb(53, 247, 53);
+    padding: 10px 0;
+}
+
+nav a {
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
@@ -24,18 +36,49 @@ nav a:hover {
 .active {
     color: white;
 }
-.cards {
+main {
     display: grid;
-    grid-template: auto 1fr auto / auto 1fr;
-    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 95%;
+    margin: 0 auto;
+    padding: 1rem;
+}
 
+@media (min-width: 600px) {
+    main {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
 }
 .card {
-    display: grid;
-    grid-template: auto 1fr auto / auto 1fr auto;
-    font-family: "Michroma", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     background-color: blue;
     color: rgb(53, 247, 53);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgb(53, 247, 53);
+    color: blue;
+}
+
+
+
+
+
+
+
+
+
