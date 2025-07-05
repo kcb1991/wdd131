@@ -1,26 +1,31 @@
 body {
     background-color: black;
 }
+
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
     background-color: cyan;
 }
+
 nav ul {
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
 }
+
 nav a {
     margin-top: 2rem;
     font-size: x-large;
     color: black;
 }
+
 nav a:hover {
     color: white;
     text-shadow: 0 0 20px black;
     text-decoration: line-through;
 }
+
 .figures {
     background-color: cyan;
     display: grid;
@@ -29,11 +34,13 @@ nav a:hover {
     padding: 1rem;
     margin: 5px;
 }
+
 main {
     max-width: 1200px;
-    margin: 0 auto;           
-    padding: 2rem;            
+    margin: 0 auto;
+    padding: 2rem;
 }
+
 main h2 {
     text-align: center;
     font-size: 2rem;
@@ -42,21 +49,26 @@ main h2 {
     padding: 5px;
     color: black;
 }
+
 figure {
     text-align: center;
     margin: 0;
 }
+
 figcaption {
     margin-top: 0.5rem;
     font-size: 1.5rem;
     color: black;
 }
+
 img {
+    aspect-ratio: 4/3;
     width: 100%;
     height: auto;
     display: block;
     border-radius: 5px;
 }
+
 footer {
     display: block;
     background-color: cyan;
@@ -65,4 +77,31 @@ footer {
     text-decoration: black;
 }
 
+#hamburger {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    position: relative;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
 
+@media (max-width: 600px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        background-color: cyan;
+        padding: 1rem;
+    }
+
+    nav.active ul {
+        display: flex;
+    }
+}

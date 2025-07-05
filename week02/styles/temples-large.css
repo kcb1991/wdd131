@@ -1,30 +1,46 @@
 @media screen and (max-width: 600px) {
     header {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    background-color: black;
-    color: cyan;
-    }
-    main {
-    grid-template-columns: 1fr; /* Single column on small screens */
-    }
-    body {
-        background-color: cyan;
-    }
-    header, main h2, .figures, footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         background-color: black;
         color: cyan;
     }
-    figcaption{
+
+    main {
+        grid-template-columns: 1fr;
+        /* Single column on small screens */
+    }
+
+    body {
+        background-color: cyan;
+    }
+
+    header,
+    main h2,
+    .figures,
+    footer {
+        background-color: black;
         color: cyan;
     }
-    .figures {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+
+    figcaption {
+        color: cyan;
     }
-    
+
+    .figures {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    #hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        color: cyan;
+    }
+    #hamburger:hover {
+        text-shadow: 0 0 20px white;
+    }
 }
-
-
-
