@@ -1,0 +1,20 @@
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: cyan;
+}
+nav {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+nav a {
+    margin-top: 2rem;
+    font-size: x-large;
+    color: black;
+}
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px black;
+    text-decoration: line-through;
+}
