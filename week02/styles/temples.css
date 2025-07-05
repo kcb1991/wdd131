@@ -8,9 +8,8 @@ header {
     background-color: cyan;
 }
 
-nav ul {
+nav  {
     display: flex;
-    justify-content: center;
     justify-content: space-evenly;
 }
 
@@ -94,14 +93,14 @@ footer {
         display: block;
     }
 
-    nav ul {
+    nav  {
         display: none;
         flex-direction: column;
         background-color: cyan;
         padding: 1rem;
     }
 
-    nav.active ul {
+    nav.active {
         display: flex;
     }
 }
