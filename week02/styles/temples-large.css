@@ -5,16 +5,12 @@
         background-color: black;
         color: cyan;
     }
-
     main {
         grid-template-columns: 1fr;
-        /* Single column on small screens */
     }
-
     body {
         background-color: cyan;
     }
-
     header,
     main h2,
     .figures,
@@ -22,17 +18,14 @@
         background-color: black;
         color: cyan;
     }
-
     figcaption {
         color: cyan;
     }
-
     .figures {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 1rem;
     }
-
     #hamburger {
         display: block;
         position: absolute;
