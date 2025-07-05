@@ -1,0 +1,13 @@
+@media screen and (max-width: 600px) {
+    header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    color: cyan;
+    }
+    main {
+    grid-template-columns: 1fr; /* Single column on small screens */
+    }
+}
+
+

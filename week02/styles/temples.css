@@ -18,3 +18,40 @@ nav a:hover {
     text-shadow: 0 0 20px black;
     text-decoration: line-through;
 }
+.figures {
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+    margin: 5px;
+}
+main {
+    max-width: 1000px;
+    margin: 0 auto;           
+    padding: 2rem;            
+}
+main h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    background-color: aqua;
+    padding: 5px;
+}
+figure {
+    text-align: center;
+    margin: 0;
+}
+figcaption {
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
+    color: #333;
+}
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+
