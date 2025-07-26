@@ -97,24 +97,25 @@ const temples = [
     // Add more temple objects here...
 ];
 
-const displayTemples = (templesList) => {
-    const grid = document.getElementById("templeGrid");
-    grid.innerHTML = ""; // Clear previous content if needed
+const container = document.getElementById("templeContainer");
 
-    templesList.forEach(({ name, location, dedicated, area, imageUrl }) => {
-        const card = document.createElement("div");
-        card.classList.add("temple-card");
+temples.forEach(temple => {
+    const card = document.createElement("div");
+    card.classList.add("temple-card");
 
-        card.innerHTML = `
-    <h3>${name}</h3>
-    <p><strong>Location:</strong> ${location}</p>
-    <p><strong>Dedicated:</strong> ${dedicated}</p>
-    <p><strong>Area:</strong> ${area.toLocaleString()} sq ft</p>
-    <img src="${imageUrl}" alt="${name}" loading="lazy">
-    `;
+    card.innerHTML = `
+    <h2>${temple.name}</h2>
+    <p><strong>Location:</strong> ${temple.location}</p>
+    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
+    <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
+    <img src="${temple.imageUrl}" alt="${temple.name}" loading="lazy">
+`;
 
-        grid.appendChild(card);
-    });
-};
+    container.appendChild(card);
 
-document.addEventListener("DOMContentLoaded", () => displayTemples(temples));
+    window.addEventListener("DOMContentLoaded", () => {
+  // your image rendering code
+});
+});
+
+
