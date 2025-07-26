@@ -1,11 +1,11 @@
 body {
-    background-color: black;
+    background-color: rgb(208, 209, 223);
 }
 
 header {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: cyan;
+    background-color: rgb(152, 176, 240);
 }
 
 nav {
@@ -26,7 +26,7 @@ nav a:hover {
 }
 
 .figures {
-    background-color: cyan;
+    background-color: rgb(152, 176, 240);;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
@@ -44,7 +44,7 @@ main h2 {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 1.5rem;
-    background-color: cyan;
+    background-color: rgb(152, 176, 240);;
     padding: 5px;
     color: black;
 }
@@ -70,7 +70,7 @@ img {
 
 footer {
     display: block;
-    background-color: cyan;
+    background-color: rgb(152, 176, 240);;
     text-align: center;
     font-size: x-large;
     color: black;
@@ -106,12 +106,13 @@ footer {
 }
 
 .temple-card {
-    border: 1px solid #ccc;
+    border: 1px solid #130202;
     padding: 1em;
     margin: 1em;
     max-width: 400px;
-    background-color: #f9f9f9;
+    background-color: rgb(152, 176, 240);;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
 }
 
 .temple-card img {
