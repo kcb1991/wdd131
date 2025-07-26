@@ -97,22 +97,21 @@ const temples = [
     // Add more temple objects here...
 ];
 
-const container = document.getElementById("templeGrid");
+createTempleCard();
 
-temples.forEach(temple => {
-    const card = document.createElement("div");
-    card.classList.add("temple-card");
+function createTempleCard() {
+    temples.forEach(temple => {
+        let card =document.createElement("section");
+        let name = document.createElement("h3");
+        let location = document.createElement("p");
+        let dedication = document.createElement("p");
+        let area = document.createElement("p");
+        let img = document.createElement("p");
 
-    card.innerHTML = `
-    <h2>${temple.templeName}</h2>
-    <p><strong>Location:</strong> ${temple.location}</p>
-    <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
-    <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
-`;
-
-    container.appendChild(card);
-});
+        name.textContent = temple.templeName;
+        location.innerHTML = '<span class="label">Location:</span> ${temple.location}';
+    })
+}
 
 
 
