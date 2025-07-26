@@ -97,25 +97,22 @@ const temples = [
     // Add more temple objects here...
 ];
 
-const container = document.getElementById("templeContainer");
+const container = document.getElementById("templeGrid");
 
 temples.forEach(temple => {
     const card = document.createElement("div");
     card.classList.add("temple-card");
 
     card.innerHTML = `
-    <h2>${temple.name}</h2>
+    <h2>${temple.templeName}</h2>
     <p><strong>Location:</strong> ${temple.location}</p>
     <p><strong>Dedicated:</strong> ${temple.dedicated}</p>
     <p><strong>Area:</strong> ${temple.area.toLocaleString()} sq ft</p>
-    <img src="${temple.imageUrl}" alt="${temple.name}" loading="lazy">
+    <img src="${temple.imageUrl}" alt="${temple.templeName}" loading="lazy">
 `;
 
     container.appendChild(card);
+});
 
-    window.addEventListener("DOMContentLoaded", () => {
-  // your image rendering code
-});
-});
 
 

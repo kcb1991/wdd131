@@ -119,3 +119,9 @@ footer {
     height: auto;
     border-radius: 4px;
 }
+.templeGrid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
