@@ -2,13 +2,7 @@
     --color-primary: #192461;
     --color-accent: #e7ae0f;
     --color-light: #f5f5f5;
-    --font-base: Arial, sans-serif;
-}
-
-.gravitas-one-regular {
-    font-family: "Gravitas One", serif;
-    font-weight: 400;
-    font-style: normal;
+    --font-base: "Pacifico", cursive;
 }
 
 body {
@@ -29,7 +23,7 @@ body {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Pacifico", cursive;
     line-height: 1.6;
     background-color: var(--color-light);
     color: #333;
