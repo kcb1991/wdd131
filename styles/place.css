@@ -96,10 +96,6 @@ body {
         justify-content: space-around;
     }
 
-    .weather-icon-mobile {
-  display: block; /* or inline-block, depending on your layout */
-}
-
     .place-details ul {
         display: flex;
         justify-content: space-between;
@@ -129,21 +125,17 @@ body {
     display: none;
 }
 
-@media (min-width: 768px) {
-    .weather-heading::after {
-        display: inline;
-    }
-
-    .weather-icon-mobile {
+.weather-icon-mobile {
     display: block;
 }
 
 @media (min-width: 768px) {
-  .weather-icon-mobile {
-    display: none;
-  }
+    .weather-icon-mobile {
+        display: none;
+    }
 }
-}
+
+
 
 .technical-info {
     display: flex;
