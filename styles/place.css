@@ -131,8 +131,8 @@ body {
     }
 
     .weather-icon-mobile {
-        display: none;
-    }
+    display: block;
+}
 }
 
 .technical-info {
