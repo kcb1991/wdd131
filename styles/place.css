@@ -131,8 +131,14 @@ body {
     }
 
     .weather-icon-mobile {
-    display: block;
-}
+        display: block;
+    }
+
+    @media (min-width: 768px) {
+        .weather-icon-mobile {
+            display: none;
+        }
+    }
 }
 
 .technical-info {
