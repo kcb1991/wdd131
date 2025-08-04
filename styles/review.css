@@ -1,0 +1,61 @@
+/* Root variables for consistency and repetition */
+:root {
+    --primary-color: #264653;
+    --accent-color: #2a9d8f;
+    --background-color: #f4faff;
+    --text-color: #333;
+    --footer-color: #6c757d;
+    --font-family: 'Roboto', 'Segoe UI', sans-serif;
+    --border-radius: 8px;
+    --spacing: 1.5rem;
+}
+
+/* Base styling */
+body {
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: var(--spacing);
+    line-height: 1.6;
+}
+
+/* Centering main content */
+main {
+    max-width: 600px;
+    margin: 4rem auto;
+    background-color: #fff;
+    padding: var(--spacing);
+    border-radius: var(--border-radius);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Heading styling */
+h1 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+/* Review counter and paragraph */
+p {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+}
+
+/* Highlight review counter */
+#reviewCounter {
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* Footer styling for repetition and unity */
+.footer {
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--footer-color);
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #ccc;
+}
