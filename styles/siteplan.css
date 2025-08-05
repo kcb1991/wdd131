@@ -1,0 +1,73 @@
+/* Import fonts from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Slab&display=swap');
+
+/* Apply base styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+    margin: 20px;
+    line-height: 1.6;
+}
+
+/* Headings styling */
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', serif;
+    color: #003366;
+    /* Royal Blue for Superman boldness */
+}
+
+/* Accent elements */
+.accent {
+    color: #e30613;
+    /* Crimson Red for cape-inspired energy */
+}
+
+/* Navigation and logo (if applicable) */
+nav {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Buttons */
+button,
+.btn {
+    background-color: #e30613;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+    background-color: #cc0410;
+}
+
+/* Footer */
+footer {
+    background-color: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+}
+
+/* Wireframe placeholders (optional for sketch alignment) */
+.box {
+    border: 2px dashed #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
