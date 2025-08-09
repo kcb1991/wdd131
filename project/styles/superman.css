@@ -51,13 +51,24 @@ nav div a {
     text-decoration: none;
     margin: 0.5rem;
     font-weight: bold;
-    transition: color 0.3s ease;
+    position: relative;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
 }
 
 nav div a:hover {
-    color: #ff3c3c;
+    color: #E10600;
     /* Superman red */
+    text-shadow:
+        0 0 5px #FFD700,
+        /* yellow glow */
+        0 0 10px #FFD700,
+        /* stronger yellow glow */
+        0 0 15px #E10600,
+        /* red glow */
+        0 0 20px #E10600;
+    /* deeper red glow */
 }
+
 
 /* Hero Section */
 section.box:first-of-type {
@@ -70,7 +81,7 @@ section.box:first-of-type {
 }
 
 .btn {
-    background-color: #ff3c3c;
+    background-color: #E10600;
     color: #fff;
     border: none;
     padding: 0.75rem 1.5rem;
@@ -82,7 +93,7 @@ section.box:first-of-type {
 }
 
 .btn:hover {
-    background-color: #cc0000;
+    background-color: #E10600;
 }
 
 /* Section Headings */
@@ -93,12 +104,12 @@ h2 {
 }
 
 .accent {
-    color: #ff3c3c;
+    color: #E10600;
 }
 
 /* Content Boxes */
 .box {
-    background-color: #fff;
+    background-color: #FCD116;
     padding: 1.5rem;
     margin: 1rem auto;
     border-radius: 6px;
@@ -132,4 +143,33 @@ footer {
     section {
         padding: 0 2rem;
     }
+
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .movie-entry {
+        display: flex;
+        align-items: flex-start;
+        gap: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .poster {
+        width: 120px;
+        height: auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    }
+
+    .movie-info h3 {
+        margin-top: 0;
+        color: #FFD700;
+    }
+
+    .movie-info p {
+        color: #ccc;
+    }
+
 }
