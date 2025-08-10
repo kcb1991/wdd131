@@ -165,11 +165,10 @@ footer {
 
     .movie-info h3 {
         margin-top: 0;
-        color: #FFD700;
+        color: #E10600;
     }
 
     .movie-info p {
-        color: #ccc;
+        color: #002f6c;
     }
-
 }
