@@ -56,13 +56,13 @@ nav div a {
 
 nav div a:hover {
     color: #E10600;
-    
+
     text-shadow:
         0 0 5px #FFD700,
         0 0 10px #FFD700,
         0 0 15px #E10600,
         0 0 20px #E10600;
-    
+
 }
 
 section.box:first-of-type {
