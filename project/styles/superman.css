@@ -127,6 +127,19 @@ footer {
     font-size: 0.9rem;
 }
 
+@media (max-width: 400px) {
+    .poster {
+        max-width: 100%;
+    }
+    .movie-entry {
+        flex-direction: column;
+        align-items: center;
+    }
+    .movie-info {
+        text-align: center;
+    }
+}
+
 /* Responsive Layout */
 @media (min-width: 600px) {
     nav {
@@ -171,4 +184,5 @@ footer {
     .movie-info p {
         color: #002f6c;
     }
+
 }
